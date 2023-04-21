@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico</title>
+    <style>
+        body{ background-color: #FFC0CB;}
+        h1 { color: #FFFFFF;}
+
+        section{
+            box-sizing: border-box;
+            width: 100%;
+            float: left;
+        }
+        .contenedor{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr
+            /* grid-template-columns: 1fr 1fr repeat(auto-fill, 50%);  */
+        }
+        .myDiv1{
+            text-align: center;
+            padding-right: 10px;
+
+
+        }
+        .myDiv2{
+            text-align: center;
+
+        }
+        .linea{
+        border-top: 1px solid black;
+        height: 2px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+        }
+        footer{
+            text-align: right;
+            padding: 5px;
+            color: black;
+        }
+        .copi{
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center">Market!</h1>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor">
+                <figure>
+                    <img src="https://marketplaceshoy.com/wp-content/uploads/2022/05/mercadolibre-img-web.jpeg" 
+                    alt="tienda1" width="100%"/>
+                    <figcaption>
+                        <a title="tienda1" href="https://mercadolibre.com/">Mercado Libre</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.shutterstock.com/image-photo/poznan-pol-sep-23-2020-260nw-1910462674.jpg" 
+                    alt="tienda1" width="100%"/>
+                    <figcaption>
+                        <a title="tienda1" href="https://www.shopify.com//">Shopify</a>
+                    </figcaption>
+                </figure>
+              
+            </div>
+           
+        </section>
+         
+    </main>
+    <hr size="3px" color="black" >
+
+    <footer>
+        <!-- <hr size="3px" color="black" > -->
+        <p class = "copi"id="copyright">"&copy; alespino 2023" </p>
+    </footer>  
+</body>
+</html>

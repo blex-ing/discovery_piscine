@@ -1,0 +1,11 @@
+body{
+    background-color: white;
+}
+main {
+    
+    /* transition: background 1s; */
+    display: flex;
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+  }

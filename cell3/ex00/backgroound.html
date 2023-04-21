@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./background.css" type="text/css">
+    <title>Menu</title>
+    <title>Backgroound</title>
+</head>
+<body id ="background">
+    
+    
+        <button onclick="setBackgroundColor();">Click me!</button>
+        <script type ="text/javascript">
+            const background = document.getElementById("background");
+    
+            const getRandomNumber = (limit) => {
+            return Math.floor(Math.random() * limit);
+            };
+    
+            const getRandomColor = () => {
+            const h = getRandomNumber(360);
+            const s = getRandomNumber(100);
+            const l = getRandomNumber(100);
+    
+            return `hsl(${h}deg, ${s}%, ${l}%)`;
+            };
+    
+            const setBackgroundColor = () => {
+            const randomColor = getRandomColor();
+            background.style.backgroundColor = randomColor;
+            background.style.color = randomColor;
+            };
+    
+            
+        </script>
+</body>
+</html>
